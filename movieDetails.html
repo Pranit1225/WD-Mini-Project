@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles.css" crossorigin="anonymous" />
+    <script src="script.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>MOVIE DETAILS</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: #333;
+      }
+
+      header {
+        background-color: #7e1616;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        position: relative;
+      }
+
+      header img {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 150px;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1,
+      h3 {
+        color: white;
+      }
+
+      h2 {
+        color: yellow;
+      }
+
+      .theater-section {
+        border: 2px solid #fff;
+        margin: 10px 0;
+        padding: 15px;
+        cursor: pointer;
+        transition: border-color 0.3s;
+        border-radius: 8px;
+        position: relative;
+      }
+
+      .theater-section:hover {
+        border-color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>BOOK YOUR TICKETS</h1>
+      <img
+        src="https://i.guim.co.uk/img/media/b78eba8720659708cba9c1c5338a7e7773a56446/0_85_4288_2572/master/4288.jpg?width=1200&quality=85&auto=format&fit=max&s=821d4a9159836868ba6e066ab0a15688"
+        alt="Ticket"
+      />
+    </header>
+    <main>
+      <h2>Ticket Price: Rs.400</h2>
+      <section
+        class="theater-section"
+        onclick="goToTicketConfirmation('Theater1')"
+      >
+        <h3>PVR PAVILLION (3rd floor,next to JW MARRIOTT HOTEL, Pune)</h3>
+      </section>
+      <section
+        class="theater-section"
+        onclick="goToTicketConfirmation('Theater2')"
+      >
+        <h3>
+          CITY PRIDE-KOTHRUD (3rd Ln, near Anand Residency, Kothrud, Pune)
+        </h3>
+      </section>
+      <section
+        class="theater-section"
+        onclick="goToTicketConfirmation('Theater3')"
+      >
+        <h3>INOX (Plot No.D, Bund Garden Rd, Pune)</h3>
+      </section>
+    </main>
+  </body>
+</html>

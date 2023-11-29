@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Movie Database</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #555;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #7e1616;
+        color: #fff;
+      }
+
+      h1 {
+        font-weight: bold;
+        color: #fff;
+      }
+
+      main {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .movie-section {
+        background-color: #ecf0f1;
+        padding: 8px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        border: 2px solid yellow;
+        width: 200px;
+      }
+
+      .movie-section:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 8px;
+      }
+
+      h2 {
+        font-weight: bold;
+        color: black;
+        margin-top: 10px;
+        border-bottom: 1px solid white;
+        padding-bottom: 5px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        border-top: 2px solid #555;
+        background-color: #7e1616;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WELCOME TO BOXOFFICE</h1>
+    </header>
+    <main>
+      <section class="movie-section" onclick="goToMovieDetails('Movie1')">
+        <img
+          src="https://uploads.dailydot.com/2023/10/image-2.png?auto=compress&fm=png"
+          alt="Movie 1"
+        />
+        <h2>CAUST</h2>
+      </section>
+      <section class="movie-section" onclick="goToMovieDetails('Movie2')">
+        <img src="https://i.imgflip.com/81vv0q.jpg" alt="Movie 2" />
+        <h2>TWINS</h2>
+      </section>
+      <section class="movie-section" onclick="goToMovieDetails('Movie3')">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJGa2N-IMMoeImqXN8z1f-LhNR0t3C6fv6x5zWytMydTntpCXUNfo9IcjwtghhJgfACtJ6DxdDmVK9Ne8BJFYd3-bAGdyJ3N3kbTy24q6SMmiC3M35f7X1En-qNr7GMBo6mZY2AcAlqfjc1Cav6GQUOAzkXVkt9ssjXV8I1oFYdSoBMgKfs3hTh4GbVGc/s320/WhatsApp%20Image%202023-11-25%20at%2019.25.31_5a2998a2.jpg"
+          alt="Movie 3"
+        />
+        <h2>Breaking Bad</h2>
+      </section>
+      <section class="movie-section" onclick="goToMovieDetails('Movie4')">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn6OYwBTK9TbqqBlRjs57ziw0E7e3nQswbjnaDnhEa9RQyZcSV6TS49WIM0FtyB9vNacTnuKwsNkB7t7wrlexiz4pY0y85iX4TyM7jbF9R_fyocw3ztoyKBobYKZCyoFGXknW0301rQQUe_xUqrCvqNBZtKoz3R7SGK7Jgxy0ewgGw269mXtnhU38_XTw/s320/e3cr4j04xxtb1.jpg"
+          alt="Movie 4"
+        />
+        <h2>Hero Shima</h2>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Movie Database. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
